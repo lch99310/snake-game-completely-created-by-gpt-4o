@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <style>
         body {
@@ -36,8 +38,16 @@
         }
         .modal button {
             margin-top: 10px;
-            padding: 5px 15px;
+            padding: 8px 20px;
+            font-size: 16px;
             cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .modal button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -63,13 +73,11 @@
         let dy = 0;
         let gameActive = true;
 
-        // Load images
-        const hugEmoji = new Image();
-        hugEmoji.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><text x="0" y="15">🤗</text></svg>';
-        
-        const snakeImg = new Image();
-        snakeImg.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><text x="0" y="15">🐍</text></svg>';
-        
+        function drawEmoji(emoji, x, y) {
+            ctx.font = `${gridSize}px Arial`;
+            ctx.fillText(emoji, x * gridSize, (y + 1) * gridSize);
+        }
+
         function checkCollision() {
             const head = snake[0];
             for(let i = 1; i < snake.length; i++) {
@@ -154,11 +162,11 @@
 
             // Draw snake segments
             snake.forEach(part => {
-                ctx.drawImage(snakeImg, part.x * gridSize, part.y * gridSize, gridSize, gridSize);
+                drawEmoji('🐍', part.x, part.y);
             });
 
-            // Draw food
-            ctx.drawImage(hugEmoji, food.x * gridSize, food.y * gridSize, gridSize, gridSize);
+            // Draw food (hugging face emoji)
+            drawEmoji('🤗', food.x, food.y);
         }
 
         function gameLoop() {
