@@ -1,4 +1,4 @@
-# Snake Game - A PM-Engineer Collaboration with GPT
+# Snake Game - A PM-Engineer Collaboration with ClaudeAI
 
 This project demonstrates an interesting collaboration between a Product Manager (me) and an AI Engineer (GPT) to create a classic Snake game. The project showcases how clear product requirements can be effectively transformed into a functional web game through iterative development.
 
@@ -6,13 +6,13 @@ This project demonstrates an interesting collaboration between a Product Manager
 
 - **Role Distribution:**
   - Product Manager (Chung-Hao): Provided clear requirements, feedback, and feature requests
-  - Engineer (GPT): Implemented the technical solutions and game logic
+  - Engineer (claude): Implemented the technical solutions and game logic
 
 ## Play the Game
 
 🎮 [Play Snake Game Here](https://lch99310.github.io/snake-game-completely-created-by-gpt-4o/)
 
-![snake-game](snake-game-by-gpt4o.png)
+![snake-game](screenshot_of_snake_game.png)
 
 ## Game Instructions
 
@@ -49,7 +49,7 @@ This game was developed through clear requirement phases:
 6. Visual improvements with emojis
 
 ## Technical Stack
-- Pure HTML5, CSS, and JavaScript
+- Pure HTML5
 - No external dependencies
 - Hosted on GitHub Pages
 
