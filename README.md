@@ -1,12 +1,12 @@
 # Snake Game - A PM-Engineer Collaboration with ClaudeAI
 
-This project demonstrates an interesting collaboration between a Product Manager (me) and an AI Engineer (GPT) to create a classic Snake game. The project showcases how clear product requirements can be effectively transformed into a functional web game through iterative development.
+This project demonstrates an interesting collaboration between a Product Manager (me) and an AI Engineer (Claude) to create a classic Snake game. The project showcases how clear product requirements can be effectively transformed into a functional web game through iterative development.
 
 ## Project Overview
 
 - **Role Distribution:**
   - Product Manager (Chung-Hao): Provided clear requirements, feedback, and feature requests
-  - Engineer (claude): Implemented the technical solutions and game logic
+  - Engineer (Claude): Implemented the technical solutions and game logic
 
 ## Play the Game
 
